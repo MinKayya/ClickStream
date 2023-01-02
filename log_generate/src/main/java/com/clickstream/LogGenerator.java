@@ -84,7 +84,7 @@ public class LogGenerator implements Runnable{
 
     private String getResponseCode() {
         String responseCode = "200";
-        if(random.nextDouble() > 0.97) {
+        if (random.nextDouble() > 0.97) {
             responseCode = "404";
         }
         return responseCode;
@@ -104,7 +104,7 @@ public class LogGenerator implements Runnable{
 
     private String getUrl() {
         double randomValue = random.nextDouble();
-        if(randomValue > 0.9) {
+        if (randomValue > 0.9) {
             return "/sub/page";
         } else if (randomValue > 0.8) {
             return "/doc/page";
